@@ -623,40 +623,25 @@ img {
 
 .poster-image-container {
     position: relative;
-}
-
-.poster-placeholder {
-    aspect-ratio: 3/4;
-    background: var(--bg-card);
-    border-radius: 16px;
-    border: 2px dashed rgba(179, 163, 105, 0.3);
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: flex-start;
+}
+
+.poster-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
     transition: var(--transition-base);
+    border: 1px solid rgba(179, 163, 105, 0.2);
 }
 
-.poster-placeholder:hover {
+.poster-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.5);
     border-color: var(--gt-gold);
-    background: var(--bg-card-hover);
-}
-
-.placeholder-content {
-    text-align: center;
-    color: var(--text-muted);
-}
-
-.placeholder-icon {
-    font-size: 4rem;
-    margin-bottom: var(--space-md);
-    display: block;
-}
-
-.placeholder-content span {
-    display: block;
-    font-size: 1.25rem;
-    color: var(--text-secondary);
-    margin-bottom: var(--space-xs);
 }
 
 .placeholder-content small {
@@ -887,9 +872,10 @@ img {
         order: 2;
     }
     
-    .poster-placeholder {
-        max-width: 400px;
+    .poster-image {
+        max-width: 100%;
         margin: 0 auto;
+        display: block;
     }
 }
 
