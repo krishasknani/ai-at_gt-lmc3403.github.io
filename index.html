@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rethinking AI in Education | Georgia Tech</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=5">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -35,7 +35,7 @@
                 <span class="stat-percent">%</span>
             </div>
             <h1 class="landing-headline">of college CS students have used AI tools for academic work</h1>
-            <p class="landing-subtext">according to a 2023  <a href="https://ieeexplore.ieee.org/document/10366692" target="_blank">study (source)</a ></p>
+            <p class="landing-subtext">according to a 2023 <a href="https://ieeexplore.ieee.org/document/10366692" target="_blank" class="source-link">study (source)</a></p>
             <a href="#problem" class="scroll-indicator">
                 <span>Read More</span>
                 <div class="arrow-down"></div>
@@ -57,20 +57,87 @@
                 <p><b>- Dr. Eric Klopfer, MIT</b></p>
             </blockquote>
             
-            <div class="problem-grid">
-                <div class="problem-card vibe-coding-card">
-                    <h3>What is "Vibe Coding"?</h3>
-                    <p><strong>Vibe coding</strong> is a term coined to describe a new approach to programming where developers rely heavily on AI tools like ChatGPT, GitHub Copilot, or Claude to generate code based on natural language descriptions. Rather than understanding the underlying logic, programmers describe what they want and let AI handle the implementation.</p>
-                    <p>While this can boost productivity for experienced developers, it poses significant risks for students who skip the fundamental learning process entirely.</p>
+            <div class="problem-stack">
+                <div class="problem-card-full vibe-coding-card">
+                    <div class="card-content-row">
+                        <div class="card-text">
+                            <h3>What is "Vibe Coding"?</h3>
+                            <p><strong>Vibe coding</strong> is a term coined by Andrej Karpathy to describe a new approach to programming where developers rely heavily on AI tools like ChatGPT, GitHub Copilot, or Claude to generate code based on natural language descriptions. Rather than understanding the underlying logic, programmers describe what they want and let AI handle the implementation.</p>
+                            <p>While this can boost productivity for experienced developers, it poses significant risks for students who skip the fundamental learning process entirely.</p>
+                            <div class="card-video-inline">
+                                <video autoplay muted loop playsinline class="card-video">
+                                    <source src="images/vibe_coding_yt-1764820274838.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <div class="card-media">
+                            <img src="images/karpathy_vibe_coding.png" alt="Andrej Karpathy's viral tweet coining the term 'vibe coding'" class="card-image">
+                            <span class="media-caption">Andrej Karpathy's viral tweet (5.1M views) that coined the term</span>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="problem-card tools-card">
+                <div class="problem-card-full tools-card">
                     <h3>AI in the Tech Industry</h3>
-                    <ul class="tools-list">
-                        <!-- <li><span class="tool-name">Cursor AI</span> <span class="tool-stat">15% usage</span></li> -->
-                    </ul>
-                    <p>The impact on the tech industry has been massive, with thousands losing their jobs at companies like Microsoft and Accenture. Looking into the future, executives in the industry are hoping to replace even more coding jobs. Mark Zuckerberg, the CEO of Meta, suggests that this could happen within the next year as mid-level engineer positions could be replaced with AI.</p>
-                    <p>This indicates that the current trend in the tech space is to embrace LLMs and other artificial intelligence technology, and that jobs are more strategic in nature as more of the coding workload is replaced with AI. As Georgia Tech prepares its computer science students for their future careers, some CS professors might want to mirror this trend in their curriculum and assignments.</p>
+                    
+                    <!-- Scrolling Logo Marquee -->
+                    <div class="logo-marquee-container">
+                        <div class="logo-marquee">
+                            <div class="logo-track">
+                                <img src="images/Google_2015_logo.svg.webp" alt="Google" class="company-logo">
+                                <img src="images/Amazon_logo.svg.png" alt="Amazon" class="company-logo">
+                                <img src="images/Microsoft_logo_(2012).svg.png" alt="Microsoft" class="company-logo">
+                                <img src="images/apple-logo-transparent.png" alt="Apple" class="company-logo apple-logo">
+                                <img src="images/Meta_Platforms_Inc._logo.svg" alt="Meta" class="company-logo">
+                                <img src="images/Nvidia_logo.svg" alt="Nvidia" class="company-logo">
+                                <img src="images/Logonetflix.png" alt="Netflix" class="company-logo">
+                                <!-- Duplicate for seamless loop -->
+                                <img src="images/Google_2015_logo.svg.webp" alt="Google" class="company-logo">
+                                <img src="images/Amazon_logo.svg.png" alt="Amazon" class="company-logo">
+                                <img src="images/Microsoft_logo_(2012).svg.png" alt="Microsoft" class="company-logo">
+                                <img src="images/apple-logo-transparent.png" alt="Apple" class="company-logo apple-logo">
+                                <img src="images/Meta_Platforms_Inc._logo.svg" alt="Meta" class="company-logo">
+                                <img src="images/Nvidia_logo.svg" alt="Nvidia" class="company-logo">
+                                <img src="images/Logonetflix.png" alt="Netflix" class="company-logo">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="industry-content">
+                        <div class="industry-text">
+                            <p>The impact on the tech industry has been massive, with thousands losing their jobs at companies like Microsoft and Accenture. Looking into the future, executives in the industry are hoping to replace even more coding jobs. Mark Zuckerberg, the CEO of Meta, suggests that this could happen within the next year as mid-level engineer positions could be replaced with AI.</p>
+                            <p>This indicates that the current trend in the tech space is to embrace LLMs and other artificial intelligence technology, and that jobs are more strategic in nature as more of the coding workload is replaced with AI. As Georgia Tech prepares its computer science students for their future careers, some CS professors might want to mirror this trend in their curriculum and assignments.</p>
+                        </div>
+                        
+                        <!-- News Headlines Collage -->
+                        <div class="headlines-collage">
+                            <div class="headline-card">
+                                <img src="images/headline1.png" alt="AI News Headline" class="headline-img">
+                            </div>
+                            <div class="headline-card">
+                                <img src="images/headline2.png" alt="AI News Headline" class="headline-img">
+                            </div>
+                            <div class="headline-card">
+                                <img src="images/headline3.png" alt="AI News Headline" class="headline-img">
+                            </div>
+                            <div class="headline-card">
+                                <img src="images/headline4.png" alt="AI News Headline" class="headline-img">
+                            </div>
+                            <div class="headline-card">
+                                <img src="images/headline5.png" alt="AI News Headline" class="headline-img">
+                            </div>
+                            <div class="headline-card">
+                                <img src="images/headline6.png" alt="AI News Headline" class="headline-img">
+                            </div>
+                            <div class="headline-card">
+                                <img src="images/headline7.png" alt="AI News Headline" class="headline-img">
+                            </div>
+                            <div class="headline-card">
+                                <img src="images/headline8.png" alt="AI News Headline" class="headline-img">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -143,7 +210,7 @@
                 
                         </ul>
                         
-                        <p class="process-conclusion">ADD MORE TEXT HERE</p>
+                        <p class="process-conclusion">Process-oriented grading also encourages deliberate reflection. By asking students to document their decisions and how they debugged code, instructors gain clearer insight into a student's actual understanding. This shifts grading away from "Did it run?" toward "How did you get there?" which is a far more reliable measure of learning.</p>
                     </div>
                 </div>
             </div>
@@ -163,13 +230,17 @@
                 
                 <div class="poster-text">
                     <h3>Why are we conducting this survey?</h3>
-                    <p>WRITE STUFF HERE</p>
+                    <p>Georgia Tech's Academic Honor Code currently does not mention AI. This leaves students and professors without clear guidance on what constitutes appropriate use of tools like ChatGPT, GitHub Copilot, and other AI assistants in coursework.</p>
+                    
+                    <p>We want to understand where you stand on the spectrum of AI usage—from writing all your code from scratch to fully automating tasks. Your input will directly inform the development of clear, fair guidelines for the College of Computing.</p>
                     
                     <ul class="gt-specific-list">
-                        <li>WRITE MORE HERE</li>
+                        <li>The survey takes approximately 10 minutes to complete</li>
+                        <li>All responses are completely anonymous</li>
+                        <li>Participants are eligible for a $50 gift card drawing</li>
                     </ul>
                     
-                    <p>EVEN MORE IF NEEDED</p>
+                    <p>By participating, you're helping shape policies that will affect every CS student at Georgia Tech. Your perspective matters—whether you avoid AI completely or use it as an integral part of your workflow.</p>
                     
                     <a href="#" class="cta-button">
                         <span>Take the Survey</span>
@@ -219,10 +290,87 @@
                 </div>
                 
                 <div class="contact-cta">
-                    <div class="gt-logo">
-                        <span class="gt-text">GT</span>
+                    <div class="klaus-image-container">
+                        <img src="images/Klaus.jpg" alt="Klaus Advanced Computing Building" class="klaus-image">
+                        <div class="klaus-overlay">
+                            <span class="gt-text">GT</span>
+                        </div>
                     </div>
-                    <p>MORE TEXT IF NEEDED OR DELETE</p>
+                    <p>Klaus Advanced Computing Building</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- References Section -->
+    <section id="references" class="references-section">
+        <div class="container">
+            <div class="section-label">References</div>
+            
+            <div class="references-list">
+                <div class="reference-item">
+                    <p>Elias, J. (2025, March 9). Meet the 21-year-old helping coders use AI to cheat in Google and other tech job interviews. <em>CNBC</em>. <a href="https://www.cnbc.com/2025/03/09/google-ai-interview-coder-cheat.html" target="_blank">https://www.cnbc.com/2025/03/09/google-ai-interview-coder-cheat.html</a></p>
+                </div>
+                
+                <div class="reference-item">
+                    <p>Groothuijsen, S., van den Beemt, A., Remmers, J. C., & van Meeuwen, L. W. (2024). AI chatbots in programming education: Students' use in a scientific computing course and consequences for learning. <em>Computers and Education: Artificial Intelligence, 7</em>, 100290. <a href="https://doi.org/10.1016/j.caeai.2024.100290" target="_blank">https://doi.org/10.1016/j.caeai.2024.100290</a></p>
+                </div>
+                
+                <div class="reference-item">
+                    <p>Harkar, S. (n.d.). Vibe Coding. <em>IBM</em>. Retrieved October 19, 2025, from <a href="https://www.ibm.com/think/topics/vibe-coding" target="_blank">https://www.ibm.com/think/topics/vibe-coding</a></p>
+                </div>
+                
+                <div class="reference-item">
+                    <p>Hazzan, O., & Erez, Y. (2025). Rethinking computer science education in the age of GenAI. <em>ACM Transactions on Computing Education</em>. Advance online publication. <a href="https://doi.org/10.1145/3732792" target="_blank">https://doi.org/10.1145/3732792</a></p>
+                </div>
+                
+                <div class="reference-item">
+                    <p>Koebler, J. (2025, July 29). Meta Is Going to Let Job Candidates Use AI During Coding Tests. <em>Wired</em>. <a href="https://www.wired.com/story/meta-ai-job-interview-coding/" target="_blank">https://www.wired.com/story/meta-ai-job-interview-coding/</a></p>
+                </div>
+                
+                <div class="reference-item">
+                    <p>Marks, G. (2025, January 26). Business Tech News: Zuckerberg Says AI Will Replace Mid-Level Engineers Soon. <em>Forbes</em>. <a href="https://www.forbes.com/sites/quickerbettertech/2025/01/26/business-tech-news-zuckerberg-says-ai-will-replace-mid-level-engineers-soon/" target="_blank">https://www.forbes.com/sites/quickerbettertech/2025/01/26/business-tech-news-zuckerberg-says-ai-will-replace-mid-level-engineers-soon/</a></p>
+                </div>
+                
+                <div class="reference-item">
+                    <p>McDanel, B., & Novak, E. (2025). Designing LLM-resistant programming assignments: Insights and strategies for CS Educators. <em>Proceedings of the 56th ACM Technical Symposium on Computer Science Education V. 1</em>, 756–762. <a href="https://doi.org/10.1145/3641554.3701872" target="_blank">https://doi.org/10.1145/3641554.3701872</a></p>
+                </div>
+                
+                <div class="reference-item">
+                    <p>McIntyre, D. (2025, October 20). Biggest AI Layoff Ever. <em>24/7 Wall Street</em>. <a href="https://247wallst.com/investing/2025/10/20/biggest-ai-layoff-ever/" target="_blank">https://247wallst.com/investing/2025/10/20/biggest-ai-layoff-ever/</a></p>
+                </div>
+                
+                <div class="reference-item">
+                    <p>Popescu, D. M., & Joyner, D. A. (2024). Novelty, rigidity, and complexity: Toward developing AI-resistant assessments in an introductory computer science class. In <em>2024 IEEE Digital Education & MOOCs Conference (DEMOcon)</em>. IEEE. <a href="https://doi.org/10.1109/DEMOcon63027.2024.10748200" target="_blank">https://doi.org/10.1109/DEMOcon63027.2024.10748200</a></p>
+                </div>
+                
+                <div class="reference-item">
+                    <p>Shein, E. (2024, July 30). The impact of AI on computer science education. <em>Communications of the ACM</em>. <a href="https://cacm.acm.org/news/the-impact-of-ai-on-computer-science-education/" target="_blank">https://cacm.acm.org/news/the-impact-of-ai-on-computer-science-education/</a></p>
+                </div>
+                
+                <div class="reference-item">
+                    <p>Singer, N. (2025, August 10). Goodbye, $165,000 Tech Jobs. Student Coders Seek Work at Chipotle. <em>The New York Times</em>. <a href="https://www.nytimes.com/2025/08/10/technology/coding-ai-jobs-students.html" target="_blank">https://www.nytimes.com/2025/08/10/technology/coding-ai-jobs-students.html</a></p>
+                </div>
+                
+                <div class="reference-item">
+                    <p>Tilo, D. (2025, August 12). Google opts for in-person interviews amid surge in AI-aided candidates. <em>HRD</em>. <a href="https://www.hcamag.com/us/specialization/hr-technology/google-opts-for-in-person-interviews-amid-surge-in-ai-aided-candidates/545926" target="_blank">https://www.hcamag.com/us/specialization/hr-technology/google-opts-for-in-person-interviews-amid-surge-in-ai-aided-candidates/545926</a></p>
+                </div>
+                
+                <div class="reference-item">
+                    <p>Vadaparty, A., Zingaro, D., Smith, D. H. IV, Padala, M., Alvarado, C., Benario, J. G., & Porter, L. (2024). CS1-LLM: Integrating large language models into CS1 instruction. <em>Proceedings of ITiCSE 2024</em>. ACM. <a href="https://doi.org/10.1145/3649217.3653584" target="_blank">https://doi.org/10.1145/3649217.3653584</a></p>
+                </div>
+                
+                <div class="reference-item">
+                    <p>Valova, I., Mladenova, T., & Kanev, G. (2024). Students' perception of ChatGPT usage in education. <em>International Journal of Advanced Computer Science and Applications, 15</em>(1). <a href="https://doi.org/10.14569/IJACSA.2024.0150143" target="_blank">https://doi.org/10.14569/IJACSA.2024.0150143</a></p>
+                </div>
+                
+                <div class="reference-item">
+                    <p>Wang, C., Wang, B., Liang, P., & Liang, J. (2025, July 20). Assessing UML models by ChatGPT: Implications for education. <em>University of Warwick</em>. <a href="https://warwick.ac.uk/fac/cross_fac/eduport/edufund/projects/yang/projects/assessing-uml-models-by-chatgpt-implications-for-education/" target="_blank">https://warwick.ac.uk/fac/cross_fac/eduport/edufund/projects/yang/projects/assessing-uml-models-by-chatgpt-implications-for-education/</a></p>
+                </div>
+                
+                <div class="reference-item">
+                    <p>Yilmaz, R., & Karaoglan Yilmaz, F. G. (2023). The effect of generative artificial intelligence (AI)-based tool use on students' computational thinking skills, programming self-efficacy and motivation. <em>Computers and Education: Artificial Intelligence, 4</em>, 100147. <a href="https://doi.org/10.1016/j.caeai.2023.100147" target="_blank">https://doi.org/10.1016/j.caeai.2023.100147</a></p>
                 </div>
             </div>
         </div>
